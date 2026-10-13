@@ -41,18 +41,32 @@ Keep the response concise, direct, and easy to scan. Use bullets instead of para
 
 ## Few-shot examples
 
-Return a one-page Markdown brief with:
+Example
+Input
+SLACK-118:
 
-# What matters
-Up to 5 bullets summarizing the strongest findings and their impact.
+Several users say the new dashboard is difficult to navigate.
+Two users cannot find the export function.
+JIRA-204:
 
-# Evidence
-List the supporting sources for each finding. Clearly label assumptions or conflicting evidence.
+Export usage has declined since the latest release.
+Support has received six related tickets.
+NOTION-32:
 
-# PM attention
-List only the key risks, decisions, or questions requiring Product Manager input. Mark missing information as “NEEDS CLARIFICATION”.
-
-# Next steps
-Recommend up to 3 evidence-based actions.
-
-Keep the response concise, direct, and easy to scan. Use bullets instead of paragraphs. Do not repeat information or include background that does not affect a decision.
+The release was intended to simplify reporting workflows.
+Output
+What matters
+Users are struggling to find the export function after the dashboard update.
+The issue is supported by user feedback, declining usage, and support tickets.
+The release may not be achieving its goal of simplifying reporting workflows.
+Evidence
+Navigation and export feedback: SLACK-118
+Declining export usage and six support tickets: JIRA-204
+Intended release outcome: NOTION-32
+PM attention
+Decide whether export discoverability requires immediate investigation.
+NEEDS CLARIFICATION: Which user groups are most affected?
+Next steps
+Review the updated export journey with affected users.
+Compare export usage before and after the release.
+Confirm whether the issue is discoverability, permissions, or functionality.
